@@ -13,6 +13,7 @@
 		46DCF64F1A9CD4F40005715C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DCF64E1A9CD4F40005715C /* Images.xcassets */; };
 		46DCF6521A9CD4F40005715C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46DCF6501A9CD4F40005715C /* LaunchScreen.xib */; };
 		46DCF65E1A9CD4F40005715C /* AutoLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCF65D1A9CD4F40005715C /* AutoLayoutTests.swift */; };
+		46DD650A1AA72AF500579101 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 46DD65091AA72AF500579101 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		46DCF6571A9CD4F40005715C /* AutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DCF65C1A9CD4F40005715C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DCF65D1A9CD4F40005715C /* AutoLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTests.swift; sourceTree = "<group>"; };
+		46DD65091AA72AF500579101 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		46DCF6391A9CD4F40005715C = {
 			isa = PBXGroup;
 			children = (
+				46DD65091AA72AF500579101 /* README.md */,
 				46DCF6441A9CD4F40005715C /* AutoLayout */,
 				46DCF65A1A9CD4F40005715C /* AutoLayoutTests */,
 				46DCF6431A9CD4F40005715C /* Products */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DD650A1AA72AF500579101 /* README.md in Resources */,
 				46DCF64D1A9CD4F40005715C /* Main.storyboard in Resources */,
 				46DCF6521A9CD4F40005715C /* LaunchScreen.xib in Resources */,
 				46DCF64F1A9CD4F40005715C /* Images.xcassets in Resources */,
@@ -405,6 +409,7 @@
 				46DCF6631A9CD4F40005715C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46DCF6641A9CD4F40005715C /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				46DCF6661A9CD4F40005715C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
