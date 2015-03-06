@@ -5,6 +5,8 @@
 ###文章链接
 
 ####1. [Auto Layout 使用心得（一）—— 初体验【Swift on iOS 学习笔记】](http://lvwenhan.com/ios/430.html)
+####2. [Auto Layout 使用心得（二）—— 实现三等分【Swift on iOS 学习笔记】](http://lvwenhan.com/ios/431.html)
+
 
 有问题请直接在文章下面留言。
 
