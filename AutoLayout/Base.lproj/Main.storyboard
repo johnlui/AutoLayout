@@ -17,17 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-4b-63b">
-                                <rect key="frame" x="16" y="285" width="568" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Swift on iOS">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ImR-15-13t" kind="show" id="M98-7X-4wg"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqn-wA-RR8">
                                 <rect key="frame" x="16" y="28" width="177" height="100"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.70588235290000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,25 +38,42 @@
                                     <constraint firstAttribute="height" constant="100" id="Yrq-Uu-k8D"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-iq-pF7">
+                                <rect key="frame" x="16" y="136" width="568" height="200"/>
+                                <color key="backgroundColor" red="0.34901960780000002" green="0.65490196079999996" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="tYC-TW-cip"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GcG-Ua-XBk" appends="YES" id="U98-if-So7"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U5h-4b-63b" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="1C3-mq-aSx"/>
-                            <constraint firstItem="U5h-4b-63b" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="3mv-kp-t56"/>
                             <constraint firstItem="7pw-7G-DVj" firstAttribute="leading" secondItem="o8Y-mB-6jE" secondAttribute="trailing" constant="18" id="7Ja-Dk-wS1"/>
                             <constraint firstItem="o8Y-mB-6jE" firstAttribute="width" secondItem="7pw-7G-DVj" secondAttribute="width" id="8CH-hD-1f5"/>
+                            <constraint firstItem="Kge-iq-pF7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="9TK-Rd-ZMU"/>
                             <constraint firstItem="Vqn-wA-RR8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Hh3-c5-53q"/>
                             <constraint firstItem="7pw-7G-DVj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="IoG-CC-3xF"/>
                             <constraint firstItem="Vqn-wA-RR8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Ive-HN-pRx"/>
                             <constraint firstItem="Vqn-wA-RR8" firstAttribute="width" secondItem="o8Y-mB-6jE" secondAttribute="width" id="JE9-GQ-PEr"/>
+                            <constraint firstItem="Kge-iq-pF7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="116" id="LWq-zV-RXb"/>
                             <constraint firstItem="7pw-7G-DVj" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Lro-PH-awC"/>
+                            <constraint firstItem="Kge-iq-pF7" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="OwZ-K7-9Tu"/>
                             <constraint firstItem="o8Y-mB-6jE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="aRW-30-DbW"/>
                             <constraint firstItem="o8Y-mB-6jE" firstAttribute="leading" secondItem="Vqn-wA-RR8" secondAttribute="trailing" constant="19" id="eif-f5-JaQ"/>
-                            <constraint firstItem="U5h-4b-63b" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="nqx-3j-CZN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="middleView" destination="Kge-iq-pF7" id="VRG-Lm-o45"/>
+                        <outlet property="middleViewTopSpaceLayout" destination="LWq-zV-RXb" id="hgV-hV-LsS"/>
+                        <outlet property="panGesture" destination="GcG-Ua-XBk" id="LVH-IX-Cbd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="GcG-Ua-XBk"/>
             </objects>
             <point key="canvasLocation" x="388" y="479"/>
         </scene>
