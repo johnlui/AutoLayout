@@ -10,8 +10,8 @@
 
 ![pic](http://lvwenhan.com/content/uploadfile/201503/b5e91425647800.gif)
 
-####2. [Auto Layout 使用心得（三）—— 自定义 cell 并使用 Auto Layout](http://lvwenhan.com/ios/441.html)
-####2. [Auto Layout 使用心得（四）—— 22 行代码实现拖动回弹](http://lvwenhan.com/ios/442.html)
+####3. [Auto Layout 使用心得（三）—— 自定义 cell 并使用 Auto Layout](http://lvwenhan.com/ios/441.html)
+####4. [Auto Layout 使用心得（四）—— 22 行代码实现拖动回弹](http://lvwenhan.com/ios/442.html)
 
 效果：  
 ![pic](http://lvwenhan.com/content/uploadfile/201504/b5e91427883570.gif)
