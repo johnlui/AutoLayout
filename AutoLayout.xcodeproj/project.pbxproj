@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46150D671AE3DE1D001AB75F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46150D661AE3DE1D001AB75F /* UIImage.swift */; };
 		46686EF91ABF1C4700D2ACD0 /* firstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46686EF71ABF1C4700D2ACD0 /* firstTableViewCell.swift */; };
 		46686EFA1ABF1C4700D2ACD0 /* firstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46686EF81ABF1C4700D2ACD0 /* firstTableViewCell.xib */; };
 		46686EFC1ABF23FA00D2ACD0 /* firstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46686EFB1ABF23FA00D2ACD0 /* firstTableViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46150D661AE3DE1D001AB75F /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		46686EF71ABF1C4700D2ACD0 /* firstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstTableViewCell.swift; sourceTree = "<group>"; };
 		46686EF81ABF1C4700D2ACD0 /* firstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = firstTableViewCell.xib; sourceTree = "<group>"; };
 		46686EFB1ABF23FA00D2ACD0 /* firstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstTableViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46150D651AE3DDE2001AB75F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46150D661AE3DE1D001AB75F /* UIImage.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		46DCF6391A9CD4F40005715C = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		46DCF6441A9CD4F40005715C /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				46150D651AE3DDE2001AB75F /* Extensions */,
 				46DCF6471A9CD4F40005715C /* AppDelegate.swift */,
 				46DCF6491A9CD4F40005715C /* ViewController.swift */,
 				46DCF64B1A9CD4F40005715C /* Main.storyboard */,
@@ -228,6 +239,7 @@
 			files = (
 				46686EFC1ABF23FA00D2ACD0 /* firstTableViewController.swift in Sources */,
 				46DCF64A1A9CD4F40005715C /* ViewController.swift in Sources */,
+				46150D671AE3DE1D001AB75F /* UIImage.swift in Sources */,
 				46DCF6481A9CD4F40005715C /* AppDelegate.swift in Sources */,
 				46686EF91ABF1C4700D2ACD0 /* firstTableViewCell.swift in Sources */,
 			);
@@ -305,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -353,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -363,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
