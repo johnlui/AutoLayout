@@ -16,6 +16,11 @@
 效果：  
 ![pic](http://lvwenhan.com/content/uploadfile/201504/b5e91427883570.gif)
 
+####5. [Auto Layout 使用心得（五）—— 根据文字、图片自动计算 UITableViewCell 高度](http://lvwenhan.com/ios/449.html)
+
+效果：  
+![pic](http://staticonsae.sinaapp.com/images/5.gif)
+
 
 
 ###有问题请直接在文章下面留言。
