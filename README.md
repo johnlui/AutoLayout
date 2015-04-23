@@ -19,7 +19,7 @@
 ####5. [Auto Layout 使用心得（五）—— 根据文字、图片自动计算 UITableViewCell 高度](http://lvwenhan.com/ios/449.html)
 
 效果：  
-![pic](http://staticonsae.sinaapp.com/images/5.gif)
+![pic](http://staticonsae.sinaapp.com/images/6.gif)
 
 
 

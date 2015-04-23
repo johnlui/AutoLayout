@@ -56,13 +56,11 @@ class firstTableViewController: UITableViewController {
 
         cell.firstLabel.text = labelArray[indexPath.row]
         
-        if indexPath.row < 3 {
-            var image = UIImage(named: indexPath.row.description)!
-            if image.size.width > 80 {
-                image = image.resizeToSize(CGSizeMake(80, image.size.height * (80 / image.size.width)))
-            }
-            cell.logoImageView.image = image
+        var image = UIImage(named: (indexPath.row % 3).description)!
+        if image.size.width > 80 {
+            image = image.resizeToSize(CGSizeMake(80, image.size.height * (80 / image.size.width)))
         }
+        cell.logoImageView.image = image
 
         return cell
     }
