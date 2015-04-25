@@ -10,18 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var middleViewTopSpaceLayoutConstant: CGFloat!
-    var middleViewOriginY: CGFloat!
+    var mainViewTopSpaceLayoutConstraintValue: CGFloat!
+    var mainViewOriginY: CGFloat!
     
-    @IBOutlet weak var middleView: UIView!
-    @IBOutlet weak var middleViewTopSpaceLayout: NSLayoutConstraint!
+    @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var topLayoutConstraintOfMainView: NSLayoutConstraint!
     @IBOutlet var panGesture: UIPanGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        panGesture.addTarget(self, action: Selector("pan"))
-        middleViewTopSpaceLayoutConstant = middleViewTopSpaceLayout.constant
-        middleViewOriginY = middleView.frame.origin.y
+        panGesture.addTarget(self, action: Selector("pan:"))
+        mainViewTopSpaceLayoutConstraintValue = topLayoutConstraintOfMainView.constant
+        mainViewOriginY = mainView.frame.origin.y
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,19 +29,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func pan() {
+    func pan(recongnizer: UIPanGestureRecognizer) {
         if panGesture.state == UIGestureRecognizerState.Ended {
             UIView.animateWithDuration(0.4, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-                self.middleView.frame.origin.y = self.middleViewOriginY
+                recongnizer.view?.frame.origin.y = self.mainViewOriginY
                 }, completion: { (success) -> Void in
                     if success {
-                        self.middleViewTopSpaceLayout.constant = self.middleViewTopSpaceLayoutConstant
+                        self.topLayoutConstraintOfMainView.constant = self.mainViewTopSpaceLayoutConstraintValue
                     }
             })
             return
         }
         let y = panGesture.translationInView(self.view).y
-        middleViewTopSpaceLayout.constant = middleViewTopSpaceLayoutConstant + y
+        topLayoutConstraintOfMainView.constant = mainViewTopSpaceLayoutConstraintValue + y
     }
 
 }
