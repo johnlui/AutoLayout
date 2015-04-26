@@ -22,8 +22,14 @@
 ![pic](http://staticonsae.sinaapp.com/images/6.gif)
 
 
+####6. [Auto Layout 使用心得（六）—— 制造炫酷的下拉刷新动画](http://lvwenhan.com/ios/450.html)
 
-###有问题请直接在文章下面留言。
+效果：  
+![pic](http://staticonsae.sinaapp.com/images/8.gif)
+
+
+
+#####有问题请直接在文章下面留言。
 
 <br>
 > ####喜欢此系列文章可以点击上面右侧的 Star 哦，变成 Unstar 就可以了！ :stuck_out_tongue_winking_eye:

@@ -17,6 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xku-bA-41f" userLabel="HiddenTopView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="dayun" translatesAutoresizingMaskIntoConstraints="NO" id="mhJ-vm-7Og">
+                                        <rect key="frame" x="300" y="18" width="150" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="9L2-eW-aX4"/>
+                                            <constraint firstAttribute="height" constant="82" id="ZWq-lO-EDF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="xiaoyun" translatesAutoresizingMaskIntoConstraints="NO" id="1wE-Hq-oBu">
+                                        <rect key="frame" x="543" y="19" width="49" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="hYi-Yn-gLv"/>
+                                            <constraint firstAttribute="width" constant="49" id="mNq-70-MWj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="hidden_banner" translatesAutoresizingMaskIntoConstraints="NO" id="vT7-XT-f7b">
+                                        <rect key="frame" x="150" y="-15" width="300" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="DED-ad-NLp"/>
+                                            <constraint firstAttribute="height" constant="150" id="alA-m1-eUh"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vT7-XT-f7b" firstAttribute="centerY" secondItem="xku-bA-41f" secondAttribute="centerY" id="2Dx-2C-JaO"/>
+                                    <constraint firstAttribute="height" constant="120" id="9Pa-XT-RE9"/>
+                                    <constraint firstItem="1wE-Hq-oBu" firstAttribute="top" secondItem="xku-bA-41f" secondAttribute="top" constant="19" id="JEO-JV-Thi"/>
+                                    <constraint firstItem="1wE-Hq-oBu" firstAttribute="trailing" secondItem="xku-bA-41f" secondAttribute="trailingMargin" id="bQF-ju-n0X"/>
+                                    <constraint firstItem="vT7-XT-f7b" firstAttribute="top" secondItem="mhJ-vm-7Og" secondAttribute="bottom" constant="-115" id="pw7-ws-7rp"/>
+                                    <constraint firstItem="mhJ-vm-7Og" firstAttribute="leading" secondItem="vT7-XT-f7b" secondAttribute="trailing" constant="-150" id="raW-sm-hwy"/>
+                                    <constraint firstItem="vT7-XT-f7b" firstAttribute="centerX" secondItem="xku-bA-41f" secondAttribute="centerX" id="tit-pA-pvN"/>
+                                    <constraint firstItem="mhJ-vm-7Og" firstAttribute="leading" secondItem="vT7-XT-f7b" secondAttribute="trailing" constant="-150" id="u0l-hE-L1t"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u0l-hE-L1t"/>
+                                    </mask>
+                                </variation>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhu-0f-5JB" userLabel="mainView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <subviews>
@@ -87,20 +128,30 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.82216264521894544" green="0.82216264521894544" blue="0.82216264521894544" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xku-bA-41f" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="GYN-0y-3YX"/>
+                            <constraint firstItem="xku-bA-41f" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="GdB-4a-gid"/>
                             <constraint firstItem="Nhu-0f-5JB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="M2V-nl-BUs"/>
                             <constraint firstItem="Nhu-0f-5JB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="OxY-no-2Nl"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Nhu-0f-5JB" secondAttribute="bottom" id="do6-ty-Hyc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Nhu-0f-5JB" secondAttribute="trailing" constant="-16" id="tuC-01-u3U"/>
+                            <constraint firstAttribute="trailing" secondItem="Nhu-0f-5JB" secondAttribute="trailing" id="tuC-01-u3U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xku-bA-41f" secondAttribute="trailing" constant="-16" id="ud4-RG-DYa"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="oxn-1J-feC"/>
                     <connections>
+                        <outlet property="dayunImageView" destination="mhJ-vm-7Og" id="OQb-Ws-Cx1"/>
+                        <outlet property="hiddenBannerImageView" destination="vT7-XT-f7b" id="IWd-48-QvY"/>
+                        <outlet property="hiddenTopView" destination="xku-bA-41f" id="xtN-x0-SVt"/>
+                        <outlet property="leftDistanceOfDayun" destination="raW-sm-hwy" id="4iB-p4-cfo"/>
                         <outlet property="mainView" destination="Nhu-0f-5JB" id="ALb-dz-Gkv"/>
                         <outlet property="panGesture" destination="GcG-Ua-XBk" id="LVH-IX-Cbd"/>
+                        <outlet property="rightDistanceOfXiaoyun" destination="bQF-ju-n0X" id="t4l-Ki-DEI"/>
+                        <outlet property="topLayoutConstraintOfHiddenTopView" destination="GdB-4a-gid" id="cGA-Dg-w8F"/>
                         <outlet property="topLayoutConstraintOfMainView" destination="OxY-no-2Nl" id="l4a-m4-Icw"/>
+                        <outlet property="xiaoyunImageView" destination="1wE-Hq-oBu" id="rZZ-Ab-h3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -157,4 +208,9 @@
             <point key="canvasLocation" x="388" y="479"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dayun" width="201" height="110"/>
+        <image name="hidden_banner" width="300" height="150"/>
+        <image name="xiaoyun" width="49" height="27"/>
+    </resources>
 </document>
