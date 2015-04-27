@@ -19,6 +19,8 @@ class firstTableViewController: UITableViewController {
 
         var nib = UINib(nibName: "firstTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "firstTableViewCell")
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         // 初始化 prototypeCell 以便复用
         prototypeCell = tableView.dequeueReusableCellWithIdentifier("firstTableViewCell") as! firstTableViewCell
@@ -38,14 +40,6 @@ class firstTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let cell = prototypeCell
-        cell.firstLabel.text = labelArray[indexPath.row]
-        return cell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height + 1
-    }
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return labelArray.count
