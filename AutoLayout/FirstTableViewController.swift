@@ -19,6 +19,9 @@ class firstTableViewController: UITableViewController {
 
         var nib = UINib(nibName: "firstTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "firstTableViewCell")
+        
+        // 感谢 https://github.com/banxi1988 使用下面两行代码替代 estimatedHeightForRowAtIndexPath 实现了自动计算 UITableViewCell 高度
+        // 经过测试，实际表现及运行效率均相似，大👍
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
         
