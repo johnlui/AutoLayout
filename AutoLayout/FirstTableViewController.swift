@@ -11,8 +11,6 @@ import UIKit
 class firstTableViewController: UITableViewController {
     
     var labelArray = Array<String>() // 用于存储 label 文字内容
-    
-    var prototypeCell: firstTableViewCell!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +22,7 @@ class firstTableViewController: UITableViewController {
         // 经过测试，实际表现及运行效率均相似，大👍
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        // 初始化 prototypeCell 以便复用
-        prototypeCell = tableView.dequeueReusableCellWithIdentifier("firstTableViewCell") as! firstTableViewCell
-        
+
         // 循环生成 label 文字内容
         for i in 1...10 {
             var text = ""

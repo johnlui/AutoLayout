@@ -2,6 +2,12 @@
 
 <br>
 
+###开发环境
+
+* OS X 10.10.3
+* Xcode Version 6.3.1 (6D1002)
+
+
 ###文章链接
 
 ####1. [Auto Layout 使用心得（一）—— 初体验](http://lvwenhan.com/ios/430.html)
