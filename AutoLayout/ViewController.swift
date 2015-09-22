@@ -109,12 +109,16 @@ class ViewController: UIViewController {
     func makeDayunRolling() {
         leftDistanceOfDayun.constant -= 30
         UIView.animateWithDuration(0.8, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-            self.dayunImageView.layoutIfNeeded()
+            // fix a bug in iOS 9
+            //self.dayunImageView.layoutIfNeeded()
+            self.hiddenTopView.layoutIfNeeded()
             }) { (success) -> Void in
                 if success {
                     self.leftDistanceOfDayun.constant += 30
                     UIView.animateWithDuration(0.8, delay: 0.5, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
-                        self.dayunImageView.layoutIfNeeded()
+                        // fix a bug in iOS 9
+                        //self.dayunImageView.layoutIfNeeded()
+                        self.hiddenTopView.layoutIfNeeded()
                         }) { (success) -> Void in
                             if success {
                                 self.makeDayunRolling()
