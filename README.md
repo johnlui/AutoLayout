@@ -18,24 +18,24 @@
 ##### 2. [Auto Layout 使用心得（二）—— 实现三等分](http://lvwenhan.com/ios/431.html)
 搭建过程：
 
-![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/blob/master/assets/b5e91425647800.gif)
+![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/master/assets/b5e91425647800.gif)
 
 ##### 3. [Auto Layout 使用心得（三）—— 自定义 cell 并使用 Auto Layout](http://lvwenhan.com/ios/441.html)
 ##### 4. [Auto Layout 使用心得（四）—— 22 行代码实现拖动回弹](http://lvwenhan.com/ios/442.html)
 
 效果：  
-![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/blob/master/assets/b5e91427883570.gif)
+![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/master/assets/b5e91427883570.gif)
 
 ##### 5. [Auto Layout 使用心得（五）—— 根据文字、图片自动计算 UITableViewCell 高度](http://lvwenhan.com/ios/449.html)
 
 效果：  
-![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/blob/master/assets/6.gif)
+![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/master/assets/6.gif)
 
 
 ##### 6. [Auto Layout 使用心得（六）—— 制造炫酷的下拉刷新动画](http://lvwenhan.com/ios/450.html)
 
 效果：  
-![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/blob/master/assets/8.gif)
+![pic](https://raw.githubusercontent.com/johnlui/AutoLayout/master/assets/8.gif)
 
 
 
