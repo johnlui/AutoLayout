@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        panGesture.addTarget(self, action: Selector("pan:"))
+        panGesture.addTarget(self, action: #selector(ViewController.pan(_:)))
         mainViewTopSpaceLayoutConstraintValue = topLayoutConstraintOfMainView.constant
         mainViewOriginY = mainView.frame.origin.y
         

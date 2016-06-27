@@ -26,7 +26,7 @@ class firstTableViewController: UITableViewController {
         // 循环生成 label 文字内容
         for i in 1...10 {
             var text = ""
-            for j in 1...i {
+            for _ in 1...i {
                 text += "Auto Layout "
             }
             labelArray.append(text)

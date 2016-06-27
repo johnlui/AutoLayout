@@ -1,11 +1,15 @@
-##《Auto Layout 使用心得》系列文章代码仓库
+# Auto Layout 秘境
+
+## 《Auto Layout 使用心得》系列文章代码仓库
+## 2015年9月24号 fir.im 组织的线下分享的 Keynote
+## Auto Layout 精仿著名页面
 
 <br>
 
 ###开发环境
 
-* OS X 10.10.3
-* Xcode Version 6.3.1 (6D1002)
+* OS X 10.11
+* Xcode Version 7.3
 
 
 ###文章链接
